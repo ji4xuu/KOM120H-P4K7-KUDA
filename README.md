@@ -51,7 +51,7 @@ Database SQLite (`kuda.db`) akan otomatis dibuat di folder `data/` saat pertama 
 ## Struktur Direktori
 
 ```
-kuda/
+KOM120H-P4K7-KUDA/
 ├── CMakeLists.txt
 ├── README.md
 ├── data/
