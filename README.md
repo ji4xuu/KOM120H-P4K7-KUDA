@@ -39,8 +39,8 @@ Contributor :
 ## Instalasi & Build
 
 ```bash
-git clone https://github.com/username/kuda.git
-cd kuda
+[git clone https://github.com/username/kuda.git](https://github.com/ji4xuu/KOM120H-P4K7-KUDA.git)
+cd KOM120H-P4K7-KUDA
 mkdir build && cd build
 cmake ..
 make
