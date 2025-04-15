@@ -1,6 +1,6 @@
 # KUDA — CLI Workshop & Pelatihan
 
-**KUDA** adalah aplikasi berbasis Command‑Line Interface untuk manajemen workshop dan pelatihan. Dirancang ringan, mudah dikonfigurasi, dan menggunakan SQLite sebagai database embedded.
+1. **KUDA** adalah aplikasi berbasis Command‑Line Interface untuk manajemen workshop dan pelatihan. Dirancang ringan, mudah dikonfigurasi, dan menggunakan SQLite sebagai database embedded.
 
 Contributor :
 
