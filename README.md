@@ -58,10 +58,7 @@ KOM120H-P4K7-KUDA/
 │   │   ├── queue.h         # Queue untuk pendaftaran
 │   │   ├── stack.h         # Stack untuk undo
 │   │   └── algorithms.h    # Sorting & searching
-│   ├── models/             # Model data
-│   │   ├── user.h          # Base class User
-│   │   ├── workshop.h      # Model Workshop
-│   │   └── registration.h  # Model Pendaftaran
+│   ├── models.h            # Model data
 │   └── utils.h             # Fungsi utilitas (hashing, input validation)
 ├── src/                    # Source code
 │   ├── main.cpp            # Entry point
