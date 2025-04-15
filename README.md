@@ -21,7 +21,7 @@ Contributor :
     1. Jadwal Workshop  
     2. Jadwal Pelatihan  
     3. Pendaftaran Workshop  
-    4. Kegiatan Diikuti (status, detail, kursi)  
+    4. Kegiatan Diikuti (status dan detail)  
     5. Logout
 
 - **Manajemen Admin**  
@@ -52,28 +52,38 @@ Database SQLite (`kuda.db`) akan otomatis dibuat di folder `data/` saat pertama 
 
 ```
 KOM120H-P4K7-KUDA/
-├── CMakeLists.txt
-├── README.md
-├── data/
-│   └── kuda.db
-└── src/
-    ├── main.cpp
-    ├── db.h
-    ├── db.cpp
-    ├── menu.h
-    ├── menu.cpp
-    ├── auth.h
-    ├── auth.cpp
-    ├── admin.h
-    ├── admin.cpp
-    ├── workshop.h
-    ├── workshop.cpp
-    └── models/
-        ├── user.h
-        ├── admin_model.h
-        ├── workshop_model.h
-        ├── training_model.h
-        └── registration_model.h
+├── CMakeLists.txt          # Konfigurasi build
+├── README.md               # Dokumentasi
+├── data/                   # Database & file konfigurasi
+│   └── kuda.db             # Database SQLite
+├── include/                # Header files
+│   ├── data_structures/    # Struktur data khusus
+│   │   ├── queue.h         # Queue untuk pendaftaran
+│   │   ├── stack.h         # Stack untuk undo
+│   │   └── algorithms.h    # Sorting & searching
+│   ├── models/             # Model data
+│   │   ├── user.h          # Base class User
+│   │   ├── workshop.h      # Model Workshop
+│   │   └── registration.h  # Model Pendaftaran
+│   └── utils.h             # Fungsi utilitas (hashing, input validation)
+├── src/                    # Source code
+│   ├── main.cpp            # Entry point
+│   ├── database/           # Database handler
+│   │   ├── database.h
+│   │   └── database.cpp
+│   ├── services/           # Business logic
+│   │   ├── admin_service.h
+│   │   ├── participant_service.h
+│   │   └── auth_service.h
+│   ├── menus/              # UI components
+│   │   ├── admin_menu.h
+│   │   └── participant_menu.h
+│   └── utils/              # Implementasi utilitas
+│       ├── hashing.cpp     # Hashing password (BCrypt)
+│       └── validation.cpp  # Validasi input
+└── tests/                  # Unit tests
+    ├── test_queue.cpp
+    └── test_sorting.cpp
 ```
 
 ## Penggunaan
